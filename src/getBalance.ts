@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 
-const address = '0x83415A53f05CEEadB1C4f4a6338D7eB342270fe2'
+const address = '0xEe02D88A04671A563b1023782B18d90c2C06131a'
 
 run()
 

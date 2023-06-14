@@ -23,6 +23,7 @@ async function deploy4337Safe(safeSalt: string) {
 
   if (await isDeployed(counterfactualAddress)) {
     console.log('Safe already deployed')
+    return;
   }
 
   console.log('Funding safe counterfactual address...')

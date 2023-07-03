@@ -1,5 +1,5 @@
-import { BigNumber, } from "ethers";
-import { AddressZero } from "@ethersproject/constants";
+import { BigNumber } from 'ethers';
+import { AddressZero } from '@ethersproject/constants';
 
 export interface MetaTransaction {
   to: string;
@@ -17,7 +17,7 @@ export interface SafeTransaction extends MetaTransaction {
   nonce: string | number;
 }
 
-function  buildSafeTransaction (template: {
+function buildSafeTransaction(template: {
   to: string;
   value?: BigNumber | number | string;
   data?: string;
@@ -30,17 +30,17 @@ function  buildSafeTransaction (template: {
   nonce: number;
 }): SafeTransaction {
   return {
-      to: template.to,
-      value: template.value || 0,
-      data: template.data || "0x",
-      operation: template.operation || 0,
-      safeTxGas: template.safeTxGas || 0,
-      baseGas: template.baseGas || 0,
-      gasPrice: template.gasPrice || 0,
-      gasToken: template.gasToken || AddressZero,
-      refundReceiver: template.refundReceiver || AddressZero,
-      nonce: template.nonce,
+    to: template.to,
+    value: template.value || 0,
+    data: template.data || '0x',
+    operation: template.operation || 0,
+    safeTxGas: template.safeTxGas || 0,
+    baseGas: template.baseGas || 0,
+    gasPrice: template.gasPrice || 0,
+    gasToken: template.gasToken || AddressZero,
+    refundReceiver: template.refundReceiver || AddressZero,
+    nonce: template.nonce,
   };
-};
+}
 
 export default buildSafeTransaction;

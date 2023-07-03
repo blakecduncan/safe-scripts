@@ -113,7 +113,7 @@ export class Create2Factory {
           saltBytes32,
           keccak256(initCode),
         ]),
-      ).slice(-40);
+      ).slice(-40)
     );
   }
 

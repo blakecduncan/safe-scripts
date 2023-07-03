@@ -1,5 +1,4 @@
 import getSigner from './helpers/getSigner';
-import { ethers } from 'ethers';
 import { hexConcat, parseEther } from 'ethers/lib/utils';
 import { fillAndSign } from './helpers/UserOp';
 import { getOwner, getContracts, isDeployed } from './helpers/factory';

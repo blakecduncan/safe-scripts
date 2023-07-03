@@ -1,12 +1,4 @@
-import {
-  Contract,
-  Wallet,
-  utils,
-  BigNumber,
-  BigNumberish,
-  Signer,
-  PopulatedTransaction,
-} from 'ethers';
+import { Contract, Wallet, BigNumberish, Signer } from 'ethers';
 import { SafeTransaction } from './buildSafeTransaction';
 import { TypedDataSigner } from '@ethersproject/abstract-signer';
 
